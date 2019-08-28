@@ -13,11 +13,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh      
+rabbitmq:
+  host: 192.168.232.133
+  port: 5672
+  username: admin
+  password: admin     
 
   
   
