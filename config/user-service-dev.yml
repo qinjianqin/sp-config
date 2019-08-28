@@ -6,30 +6,18 @@ spring:
   application:
     name: user-service
     
-#server:
-#  port: 8101
+server:
+  port: 8101
 
 eureka:
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
-      
----
-spring:
-  profiles: user1
-  
-server:
-  port: 8101
----
-spring:
-  profiles: user2
-
-server:
-  port: 8102     
-
-  
 management:
   endpoints:
     web:
       exposure:
-        include: refresh  
+        include: refresh      
+
+  
+  
